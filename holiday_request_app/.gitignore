@@ -1,0 +1,47 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# UV
+uv.lock
+
+# Environment variables
+.env
+.env.local
+
+# Streamlit
+.streamlit/
+streamlit_app_logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+app.log
+
+# Databricks
+.databricks/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Session state
+sessions/
