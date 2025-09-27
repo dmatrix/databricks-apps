@@ -63,8 +63,8 @@ Run the SQL script in `create_tables_and_schema.sql` to:
 
 ```sql
 -- The script includes requests for our stellar team:
--- Andre, Carly, Daniel, Denny, Elise, Holly, Jenni, 
--- Jules, Lizzie, Nick, Oleksandra, Robert, and Torey
+-- Alex, Sarah, Michael, Emily, David, Jessica, Ryan,
+-- Jules, Amanda, Kevin, Maria, James, and Lisa
 -- All requesting December 1-12, 2025 (great minds think alike!)
 ```
 

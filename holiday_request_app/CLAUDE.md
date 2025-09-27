@@ -131,7 +131,7 @@ holiday_request_app/
 
 **create_tables_and_schema.sql** - Database setup:
 - Creates `holidays` schema and `holiday_requests` table
-- Inserts sample data for team members (Andre, Carly, Daniel, etc.)
+- Inserts sample data for team members (Alex, Sarah, Michael, etc.)
 - Configures proper permissions for app client ID
 
 **pyproject.toml** - Project configuration:
@@ -151,7 +151,7 @@ holiday_request_app/
 Run `create_tables_and_schema.sql` to:
 1. Create `holidays` schema
 2. Create `holiday_requests` table with SERIAL primary key
-3. Insert sample data for team members (Andre, Carly, Daniel, Denny, Elise, Holly, Jenni, Jules, Lizzie, Nick, Oleksandra, Robert, and Torey)
+3. Insert sample data for team members (Alex, Sarah, Michael, Emily, David, Jessica, Ryan, Jules, Amanda, Kevin, Maria, James, and Lisa)
 4. Grant permissions to app client ID
 
 **Sample Data**: All team members request December 1-12, 2025 vacation period with "Pending" status - perfect for testing the approval workflow.
