@@ -1,4 +1,6 @@
-# 🏖️ Holiday Request Manager
+# 🏖️ Shindig Holiday Request Manager
+
+![Holiday Request Manager](./images/holiday-shindig-request-manager.png)   
 
 *Because even data engineers need vacation days (and someone needs to approve them)*
 
