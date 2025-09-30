@@ -8,49 +8,141 @@ This file provides context for AI assistants (like Claude) working on this proje
 
 The goal is to showcase rapid data-to-insight conversion without requiring users to write code or configure complex tools.
 
-## Architecture Overview
+## High-Level Architecture
+
+### System Overview
+
+Data-to-UI Magic is built on **Streamlit** with a component-based architecture that processes data through distinct stages:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        User Interface Layer                      │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐          │
+│  │ File Upload  │  │ Sample Data  │  │ Reset Button │          │
+│  └──────────────┘  └──────────────┘  └──────────────┘          │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                     Data Processing Layer                        │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │ Data Type Detection (detect_data_type)                   │   │
+│  │  - CSV/TSV: Separator detection, column parsing          │   │
+│  │  - JSON: Nested structure flattening                     │   │
+│  │  - Text: Entity extraction (emails, phones, dates)       │   │
+│  └──────────────────────────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                    Session State Management                      │
+│         st.session_state.df (pandas DataFrame)                   │
+│         st.session_state.selected_sample                         │
+│         st.session_state.uploader_key                            │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                    Visualization Layer                           │
+│  ┌────────────────┐  ┌────────────────┐  ┌──────────────────┐  │
+│  │ Data Profile   │  │ Auto Charts    │  │ Statistics Panel │  │
+│  │ - Row count    │  │ - Histograms   │  │ - Describe()     │  │
+│  │ - Columns      │  │ - Bar charts   │  │ - Categorical    │  │
+│  │ - Data types   │  │ - Heatmaps     │  │ - Quality metrics│  │
+│  │ - Missing vals │  │ - Plotly       │  │                  │  │
+│  └────────────────┘  └────────────────┘  └──────────────────┘  │
+│                                                                  │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │ Interactive Data Explorer                                 │  │
+│  │ - Column filtering (categorical & numeric ranges)         │  │
+│  │ - Multi-column sorting                                    │  │
+│  │ - Pagination (configurable rows per page)                │  │
+│  │ - Smart formatting (currency, dates, booleans)           │  │
+│  └──────────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                       Export Layer                               │
+│    CSV Download  │  JSON Export  │  Text Summary                │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ### Core Components
 
-1. **Data Detection & Processing** (`detect_data_type`, `process_json_data`, `extract_entities_from_text`)
-   - Automatically identifies file format (CSV, JSON, TSV, text)
+1. **Data Detection & Processing** (`detect_data_type`, `process_json_data`, `extract_entities_from_text`, `handle_file_processing`)
+   - Automatically identifies file format (CSV, JSON, TSV, unstructured text)
+   - Intelligent separator detection for CSV files (`,`, `;`, `\t`, `|`)
    - Processes structured data into pandas DataFrames
-   - Extracts entities from unstructured text using regex
+   - Extracts entities from unstructured text using regex patterns
+   - Comprehensive error handling with user-friendly messages
 
 2. **Data Profiling** (`create_data_profile`)
    - Calculates key metrics: rows, columns, data types, missing values, memory usage
-   - Displays metrics in a dashboard-style layout
+   - Displays metrics in a dashboard-style layout with visual cards
+   - Real-time computation on data load
 
 3. **Automatic Visualizations** (`generate_automatic_charts`)
-   - Creates histograms for numeric columns
-   - Generates bar charts for categorical columns (with reasonable cardinality)
+   - Creates histograms for numeric columns (distribution analysis)
+   - Generates bar charts for categorical columns (with cardinality limits)
    - Produces correlation heatmaps for multiple numeric columns
+   - Uses Plotly for interactive, responsive charts
+   - Automatic chart selection based on data types
 
 4. **Interactive Explorer** (`create_interactive_explorer`)
-   - Implements filtering by categorical and numeric columns
-   - Provides sorting and pagination controls
+   - Dynamic filtering by categorical columns (multi-select)
+   - Numeric range filtering with sliders
+   - Multi-column sorting capabilities
+   - Configurable pagination (100/500/1000 rows)
    - Smart column formatting (currency, dates, booleans)
+   - Real-time data updates as filters change
 
 5. **Statistics Panel** (`create_statistics_panel`)
-   - Detailed numeric statistics (describe())
-   - Categorical analysis (unique values, mode, counts)
-   - Data quality overview (completeness, duplicates)
+   - Detailed numeric statistics (min, max, mean, std, quartiles)
+   - Categorical analysis (unique values, mode, value counts)
+   - Data quality overview (completeness %, duplicates)
+   - Organized in expandable sections
 
 6. **Export Functionality**
-   - CSV download
-   - JSON export
+   - CSV download (preserves current data state)
+   - JSON export (structured format)
    - Text summary generation
+   - One-click download buttons
+
+7. **Reset Functionality**
+   - Clears all session state
+   - Resets file uploader (using dynamic key)
+   - Resets sample selector to "None"
+   - Returns app to initial state
 
 ### Data Flow
 
 ```
-User Upload → File Processing → Data Type Detection → DataFrame Conversion
-     ↓
-Session State Storage (st.session_state.df)
-     ↓
-Parallel Rendering: Profile + Charts + Explorer + Statistics
-     ↓
-Export Options
+┌─────────────────────────────────────────────────────────────┐
+│ User Action: Upload File OR Select Sample Data             │
+└─────────────────────────────────────────────────────────────┘
+                        ↓
+┌─────────────────────────────────────────────────────────────┐
+│ File Processing: Read → Detect Type → Parse                │
+│ - CSV/TSV: Auto-detect separator, create DataFrame         │
+│ - JSON: Parse and flatten nested structures                │
+│ - Text: Extract entities using regex patterns              │
+└─────────────────────────────────────────────────────────────┘
+                        ↓
+┌─────────────────────────────────────────────────────────────┐
+│ Session State Storage: st.session_state.df = DataFrame     │
+│ Persists across Streamlit reruns                           │
+└─────────────────────────────────────────────────────────────┘
+                        ↓
+┌─────────────────────────────────────────────────────────────┐
+│ Conditional Rendering (if st.session_state.df is not None) │
+│                                                             │
+│  1. create_data_profile(df)        → Metrics cards         │
+│  2. generate_automatic_charts(df)  → Visual charts         │
+│  3. create_interactive_explorer(df)→ Filterable table      │
+│  4. create_statistics_panel(df)    → Statistical analysis  │
+│  5. Export Options                 → Download buttons      │
+└─────────────────────────────────────────────────────────────┘
+                        ↓
+┌─────────────────────────────────────────────────────────────┐
+│ User Actions: Filter, Sort, Export, or Reset               │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ## Key Design Decisions

@@ -1,10 +1,71 @@
 # 🪄 Data-to-UI Magic
 
-Transform CSV, JSON, and text files into beautiful, interactive dashboards instantly.
+Transform CSV, JSON, and unstructured text files into insights!
 
 ## Overview
 
 Data-to-UI Magic is a Streamlit-powered application that automatically analyzes, visualizes, and provides insights from your data files. Simply upload your data and watch as the app creates professional dashboards with charts, statistics, and interactive exploration tools.
+
+Built with **Databricks**, **Claude Code**, and **Cursor** to demonstrate rapid data-to-insight conversion without requiring users to write code or configure complex tools.
+
+## High-Level Architecture
+
+### System Design
+
+```
+┌────────────────────────────────────────────────────────────┐
+│                    User Interface                          │
+│  [File Upload] [Sample Data Selector] [Reset Button]      │
+└────────────────────────────────────────────────────────────┘
+                         ↓
+┌────────────────────────────────────────────────────────────┐
+│              Data Processing Pipeline                      │
+│                                                            │
+│  1. Data Type Detection                                    │
+│     - CSV/TSV: Auto-detect separators                     │
+│     - JSON: Parse and flatten structures                  │
+│     - Text: Extract entities (emails, phones, dates)      │
+│                                                            │
+│  2. DataFrame Conversion                                   │
+│     - Pandas DataFrame creation                           │
+│     - Type inference and validation                       │
+│                                                            │
+│  3. Session State Storage                                  │
+│     - Persist data across Streamlit reruns                │
+└────────────────────────────────────────────────────────────┘
+                         ↓
+┌────────────────────────────────────────────────────────────┐
+│                Visualization Engine                        │
+│                                                            │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐    │
+│  │ Data Profile │  │ Auto Charts  │  │  Statistics  │    │
+│  │  - Metrics   │  │  - Histograms│  │  - Summary   │    │
+│  │  - Types     │  │  - Bar charts│  │  - Quality   │    │
+│  │  - Missing   │  │  - Heatmaps  │  │  - Analysis  │    │
+│  └──────────────┘  └──────────────┘  └──────────────┘    │
+│                                                            │
+│  ┌──────────────────────────────────────────────────┐    │
+│  │       Interactive Data Explorer                   │    │
+│  │  - Filtering (categorical & numeric)             │    │
+│  │  - Sorting (multi-column)                        │    │
+│  │  - Pagination (configurable)                     │    │
+│  └──────────────────────────────────────────────────┘    │
+└────────────────────────────────────────────────────────────┘
+                         ↓
+┌────────────────────────────────────────────────────────────┐
+│                   Export Options                           │
+│        [CSV Download] [JSON Export] [Text Summary]        │
+└────────────────────────────────────────────────────────────┘
+```
+
+### Technology Stack
+
+- **Frontend Framework**: Streamlit
+- **Data Processing**: Pandas, NumPy
+- **Visualizations**: Plotly Express
+- **Data Type Detection**: Python regex, JSON parser
+- **Session Management**: Streamlit session state
+- **Development Tools**: uv (package manager), Python 3.11+
 
 ## Features
 
@@ -39,12 +100,17 @@ Data-to-UI Magic is a Streamlit-powered application that automatically analyzes,
 
 ### 🎯 Sample Data
 Pre-loaded sample datasets including:
-- Sales Data
-- Customer Data
-- Survey Results
-- JSON API Response
-- Contact Information
-- Product Reviews
+- Sales Data (150 records with order details)
+- Customer Data (employee information)
+- Survey Results (organizational feedback)
+- JSON API Response (user data structure)
+- Contact Information (unstructured text with entities)
+
+### 🔄 Reset Functionality
+- One-click reset button
+- Clears all visualizations and data
+- Resets file uploader and sample selector
+- Returns app to initial state
 
 ## Installation
 
