@@ -1,0 +1,436 @@
+Customer Contact Information Database - Q1 2024 Export
+========================================================
+
+ENTERPRISE CUSTOMERS - TECHNOLOGY SECTOR
+
+Contact: Sarah Mitchell - Chief Technology Officer
+Email: sarah.mitchell@techcorp.com
+Phone: (415) 555-0123
+Company: TechCorp Solutions Inc.
+Budget: $450,000
+Contract Date: 2024-01-15
+Status: Active Premium
+
+Contact: James Richardson - VP of Engineering
+Email: j.richardson@innovatetech.io
+Phone: (650) 555-0198
+Company: InnovateTech Systems
+Budget: $325,000
+Contract Date: 2024-01-22
+Status: Active
+
+Contact: Maria Gonzalez - Head of Infrastructure
+Email: maria.g@cloudnine.com
+Phone: (408) 555-0234
+Company: CloudNine Technologies
+Budget: $875,000
+Contract Date: 2023-12-10
+Status: Active Premium
+
+Contact: Robert Chen - Director of DevOps
+Email: rchen@fastdeploy.net
+Phone: (925) 555-0145
+Company: FastDeploy Inc
+Budget: $210,000
+Contract Date: 2024-02-05
+Status: Trial
+
+Contact: Jennifer Park - CIO
+Email: jennifer.park@datastream.com
+Phone: (510) 555-0167
+Company: DataStream Analytics
+Budget: $620,000
+Contract Date: 2023-11-28
+Status: Active Premium
+
+ENTERPRISE CUSTOMERS - FINANCIAL SERVICES
+
+Contact: Michael Torres - SVP Technology
+Email: m.torres@globalbank.com
+Phone: (212) 555-0189
+Company: Global Bank USA
+Budget: $1,250,000
+Contract Date: 2023-10-15
+Status: Active Enterprise
+
+Contact: Lisa Anderson - Chief Digital Officer
+Email: lisa.anderson@wealthmanage.com
+Phone: (617) 555-0156
+Company: WealthManage Partners
+Budget: $540,000
+Contract Date: 2024-01-08
+Status: Active Premium
+
+Contact: David Kim - Director of IT Operations
+Email: dkim@investpro.com
+Phone: (312) 555-0201
+Company: InvestPro Financial
+Budget: $395,000
+Contract Date: 2023-12-20
+Status: Active
+
+Contact: Amanda White - Head of Technology
+Email: a.white@capitalfirst.com
+Phone: (646) 555-0178
+Company: Capital First Holdings
+Budget: $780,000
+Contract Date: 2024-02-14
+Status: Active Premium
+
+Contact: Christopher Lee - VP Engineering
+Email: chris.lee@fintech-innovations.com
+Phone: (415) 555-0223
+Company: FinTech Innovations LLC
+Budget: $425,000
+Contract Date: 2024-01-30
+Status: Active
+
+ENTERPRISE CUSTOMERS - HEALTHCARE
+
+Contact: Rebecca Martinez - CTO
+Email: r.martinez@healthsystems.org
+Phone: (617) 555-0134
+Company: HealthSystems Network
+Budget: $685,000
+Contract Date: 2023-11-05
+Status: Active Premium
+
+Contact: Daniel Brown - Director of IT
+Email: dbrown@medicalcenter.com
+Phone: (713) 555-0192
+Company: Advanced Medical Center
+Budget: $310,000
+Contract Date: 2024-01-18
+Status: Active
+
+Contact: Emily Davis - VP of Technology
+Email: emily.davis@careplus.com
+Phone: (404) 555-0167
+Company: CarePlus Healthcare
+Budget: $520,000
+Contract Date: 2023-12-08
+Status: Active Premium
+
+Contact: Thomas Wilson - Chief Information Officer
+Email: t.wilson@healthtech.com
+Phone: (206) 555-0145
+Company: HealthTech Solutions
+Budget: $895,000
+Contract Date: 2024-02-01
+Status: Active Enterprise
+
+Contact: Jessica Taylor - Head of Digital Health
+Email: jessica.t@wellnessgroup.com
+Phone: (720) 555-0189
+Company: Wellness Group International
+Budget: $445,000
+Contract Date: 2024-01-25
+Status: Active
+
+ENTERPRISE CUSTOMERS - RETAIL & E-COMMERCE
+
+Contact: Andrew Johnson - VP Engineering
+Email: ajohnson@shopfast.com
+Phone: (415) 555-0201
+Company: ShopFast Retail
+Budget: $725,000
+Contract Date: 2023-10-22
+Status: Active Premium
+
+Contact: Michelle Thompson - CTO
+Email: m.thompson@ecommerce-giant.com
+Phone: (206) 555-0178
+Company: E-Commerce Giant Inc
+Budget: $1,100,000
+Current Date: 2024-01-12
+Status: Active Enterprise
+
+Contact: Brian Garcia - Director of Platform Engineering
+Email: bgarcia@retailnow.com
+Phone: (512) 555-0156
+Company: RetailNow Corporation
+Budget: $380,000
+Contract Date: 2024-02-08
+Status: Active
+
+Contact: Sarah Rodriguez - Head of Technology
+Email: s.rodriguez@fashionmart.com
+Phone: (305) 555-0134
+Company: FashionMart Online
+Budget: $495,000
+Contract Date: 2023-12-15
+Status: Active Premium
+
+Contact: Kevin Martinez - VP Technology
+Email: kevin.m@homegoods-plus.com
+Phone: (480) 555-0167
+Company: HomeGoods Plus
+Budget: $565,000
+Contract Date: 2024-01-20
+Status: Active Premium
+
+ENTERPRISE CUSTOMERS - MANUFACTURING
+
+Contact: Patricia Anderson - CIO
+Email: p.anderson@autoparts-corp.com
+Phone: (313) 555-0192
+Company: AutoParts Corporation
+Budget: $640,000
+Contract Date: 2023-11-18
+Status: Active Premium
+
+Contact: William Clark - Director of IT
+Email: wclark@industrialtech.com
+Phone: (414) 555-0145
+Company: Industrial Tech Manufacturing
+Budget: $420,000
+Contract Date: 2024-01-05
+Status: Active
+
+Contact: Laura Lewis - VP of Technology
+Email: l.lewis@precisionmfg.com
+Phone: (704) 555-0201
+Company: Precision Manufacturing Co
+Budget: $535,000
+Contract Date: 2023-12-28
+Status: Active Premium
+
+Contact: Joseph Walker - Chief Technology Officer
+Email: j.walker@advanced-materials.com
+Phone: (216) 555-0178
+Company: Advanced Materials Inc
+Budget: $775,000
+Contract Date: 2024-02-10
+Status: Active Enterprise
+
+Contact: Nancy Hall - Head of Digital Transformation
+Email: nancy.hall@globalmanufacture.com
+Phone: (317) 555-0156
+Company: Global Manufacture Systems
+Budget: $485,000
+Contract Date: 2024-01-28
+Status: Active
+
+ENTERPRISE CUSTOMERS - EDUCATION
+
+Contact: Richard Young - VP IT Services
+Email: r.young@university-tech.edu
+Phone: (617) 555-0189
+Company: University Tech Institute
+Budget: $390,000
+Contract Date: 2023-11-25
+Status: Active
+
+Contact: Barbara King - CIO
+Email: bking@learning-platform.edu
+Phone: (919) 555-0167
+Company: Learning Platform University
+Budget: $515,000
+Contract Date: 2024-01-15
+Status: Active Premium
+
+Contact: Charles Wright - Director of Technology
+Email: c.wright@edtech-solutions.com
+Phone: (512) 555-0134
+Company: EdTech Solutions
+Budget: $625,000
+Contract Date: 2023-12-05
+Status: Active Premium
+
+Contact: Susan Lopez - VP of Engineering
+Email: susan.lopez@digital-academy.com
+Phone: (650) 555-0201
+Company: Digital Academy Platform
+Budget: $465,000
+Contract Date: 2024-02-12
+Status: Active
+
+Contact: Matthew Hill - Chief Technology Officer
+Email: m.hill@online-university.edu
+Phone: (858) 555-0145
+Company: Online University Network
+Budget: $720,000
+Contract Date: 2024-01-22
+Status: Active Premium
+
+ENTERPRISE CUSTOMERS - MEDIA & ENTERTAINMENT
+
+Contact: Karen Scott - VP of Technology
+Email: k.scott@streamingmax.com
+Phone: (310) 555-0178
+Company: StreamingMax Media
+Budget: $925,000
+Contract Date: 2023-10-30
+Status: Active Enterprise
+
+Contact: Donald Green - CTO
+Email: dgreen@contentcreators.com
+Phone: (212) 555-0192
+Company: Content Creators Network
+Budget: $585,000
+Contract Date: 2024-01-10
+Status: Active Premium
+
+Contact: Betty Adams - Director of Engineering
+Email: b.adams@digitalmedia-co.com
+Phone: (323) 555-0156
+Company: Digital Media Company
+Budget: $445,000
+Contract Date: 2023-12-22
+Status: Active
+
+Contact: Paul Baker - Head of Platform
+Email: paul.baker@entertainment-tech.com
+Phone: (818) 555-0167
+Company: Entertainment Tech Studios
+Budget: $695,000
+Contract Date: 2024-02-05
+Status: Active Premium
+
+Contact: Helen Nelson - VP Engineering
+Email: h.nelson@broadcast-systems.com
+Phone: (404) 555-0134
+Company: Broadcast Systems Inc
+Budget: $525,000
+Contract Date: 2024-01-18
+Status: Active Premium
+
+ENTERPRISE CUSTOMERS - TELECOMMUNICATIONS
+
+Contact: Mark Carter - CIO
+Email: m.carter@telecom-global.com
+Phone: (972) 555-0201
+Company: Telecom Global Networks
+Budget: $1,350,000
+Contract Date: 2023-11-12
+Status: Active Enterprise
+
+Contact: Sandra Mitchell - VP of Technology
+Email: sandra.m@wireless-connect.com
+Phone: (404) 555-0189
+Company: Wireless Connect Inc
+Budget: $745,000
+Contract Date: 2024-01-08
+Status: Active Premium
+
+Contact: Steven Perez - Director of IT
+Email: sperez@broadband-solutions.com
+Phone: (503) 555-0145
+Company: Broadband Solutions LLC
+Budget: $495,000
+Contract Date: 2023-12-18
+Status: Active
+
+Contact: Donna Roberts - Chief Technology Officer
+Email: d.roberts@fiber-networks.com
+Phone: (720) 555-0178
+Company: Fiber Networks USA
+Budget: $865,000
+Contract Date: 2024-02-02
+Status: Active Enterprise
+
+Contact: George Turner - VP Engineering
+Email: g.turner@mobile-innovations.com
+Phone: (425) 555-0167
+Company: Mobile Innovations Corp
+Budget: $575,000
+Contract Date: 2024-01-25
+Status: Active Premium
+
+ENTERPRISE CUSTOMERS - LOGISTICS & TRANSPORTATION
+
+Contact: Carol Phillips - CTO
+Email: c.phillips@globallogistics.com
+Phone: (901) 555-0192
+Company: Global Logistics Partners
+Budget: $685,000
+Contract Date: 2023-11-08
+Status: Active Premium
+
+Contact: Kenneth Campbell - Director of Technology
+Email: kcampbell@freight-systems.com
+Phone: (614) 555-0134
+Company: Freight Systems International
+Budget: $420,000
+Contract Date: 2024-01-15
+Status: Active
+
+Contact: Dorothy Parker - VP of IT
+Email: d.parker@supply-chain-tech.com
+Phone: (336) 555-0156
+Company: Supply Chain Technology
+Budget: $535,000
+Contract Date: 2023-12-28
+Status: Active Premium
+
+Contact: Jason Evans - Chief Information Officer
+Email: j.evans@transport-solutions.com
+Phone: (816) 555-0201
+Company: Transport Solutions Corp
+Budget: $795,000
+Contract Date: 2024-02-08
+Status: Active Enterprise
+
+Contact: Sharon Edwards - Head of Digital Operations
+Email: sharon.e@logistics-pro.com
+Phone: (469) 555-0178
+Company: Logistics Pro Services
+Budget: $465,000
+Contract Date: 2024-01-20
+Status: Active
+
+ENTERPRISE CUSTOMERS - ENERGY & UTILITIES
+
+Contact: Larry Collins - VP Technology
+Email: l.collins@power-grid.com
+Phone: (713) 555-0145
+Company: Power Grid Systems
+Budget: $955,000
+Contract Date: 2023-10-25
+Status: Active Enterprise
+
+Contact: Ruth Stewart - CTO
+Email: rstewart@renewable-energy.com
+Phone: (303) 555-0167
+Company: Renewable Energy Corp
+Budget: $625,000
+Contract Date: 2024-01-12
+Status: Active Premium
+
+Contact: Ronald Sanchez - Director of IT
+Email: r.sanchez@utility-tech.com
+Phone: (602) 555-0189
+Company: Utility Tech Solutions
+Budget: $485,000
+Contract Date: 2023-12-15
+Status: Active
+
+Contact: Sharon Morris - VP of Engineering
+Email: s.morris@smartgrid-innovations.com
+Phone: (408) 555-0134
+Company: SmartGrid Innovations
+Budget: $715,000
+Contract Date: 2024-02-01
+Status: Active Premium
+
+Contact: Timothy Rogers - Chief Technology Officer
+Email: t.rogers@energy-systems.com
+Phone: (214) 555-0201
+Company: Energy Systems Inc
+Budget: $835,000
+Contract Date: 2024-01-28
+Status: Active Enterprise
+
+SUMMARY STATISTICS
+==================
+Total Contacts: 60
+Total Budget Value: $39,965,000
+Average Budget: $666,083
+Active Premium: 32 accounts
+Active Enterprise: 8 accounts
+Active Standard: 16 accounts
+Trial: 4 accounts
+
+Contact Period: Q1 2024 (January 1 - March 31, 2024)
+Last Updated: March 31, 2024
+Database Version: 2.4.1

@@ -55,14 +55,14 @@ cd /Users/jules/git-repos/databricks-apps/data_ui_app
 
 2. Install required dependencies:
 ```bash
-pip install streamlit pandas plotly numpy
+uv pip install streamlit pandas plotly numpy
 ```
 
 ## Usage
 
 Run the Streamlit app:
 ```bash
-streamlit run app_ui_mock.py
+uv run streamlit run app.py
 ```
 
 The app will open in your default browser at `http://localhost:8501`
@@ -110,7 +110,7 @@ Uses regex pattern matching to extract:
 
 ```
 data_ui_app/
-├── app_ui_mock.py          # Main Streamlit application
+├── app.py                  # Main Streamlit application
 ├── README.md               # This file
 └── CLAUDE.md              # AI assistant context file
 ```

@@ -143,12 +143,23 @@ with st.expander("New Filter"):
 
 ## Dependencies
 
+The project uses `uv` for dependency management and virtual environment handling.
+
 - **streamlit**: Web framework for data apps
 - **pandas**: Data manipulation and analysis
 - **plotly**: Interactive visualizations
 - **numpy**: Numerical operations
-- **json**: JSON parsing
-- **re**: Regular expression pattern matching
+- **json**: JSON parsing (standard library)
+- **re**: Regular expression pattern matching (standard library)
+
+### Running Locally
+
+```bash
+cd /Users/jules/git-repos/databricks-apps/data_ui_app
+uv run streamlit run app.py
+```
+
+The app will be available at `http://localhost:8501`
 
 ## Testing Approach
 
