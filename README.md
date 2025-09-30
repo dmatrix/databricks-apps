@@ -2,7 +2,7 @@
 
 [![Databricks Apps Collection](./assets/images/banner.svg)](https://github.com/jules/databricks-apps)
 
-[![Apps](https://img.shields.io/badge/Apps-4-FF3621?style=for-the-badge&logo=databricks)](./README.md#apps-overview)
+[![Apps](https://img.shields.io/badge/Apps-5-FF3621?style=for-the-badge&logo=databricks)](./README.md#apps-overview)
 [![Frameworks](https://img.shields.io/badge/Frameworks-Streamlit%20%7C%20Gradio-FF8A00?style=for-the-badge)](./README.md#apps-overview)
 [![Dependencies](https://img.shields.io/badge/Dependencies-UV-3b82f6?style=for-the-badge)](https://docs.astral.sh/uv/)
 [![Platform](https://img.shields.io/badge/Platform-Databricks-FF3621?style=for-the-badge&logo=databricks)](https://docs.databricks.com/en/dev-tools/databricks-apps/index.html)
@@ -31,6 +31,24 @@ A full-stack holiday request management system showcasing the integration betwee
 **Key Technologies**: SQLAlchemy, psycopg, OAuth tokens, session state management
 
 **Notable Features**: Demonstrates proper PostgreSQL connection patterns with OAuth token injection, comprehensive error handling, and enterprise-grade security through Unity Catalog integration.
+
+### 🪄 Data-to-UI Magic
+**Location**: `data_ui_app/`
+**Framework**: Streamlit
+**Purpose**: Data Analysis & Visualization
+
+An intelligent data analysis application that automatically transforms uploaded data files into interactive dashboards. Features include:
+
+- **Automatic data type detection** (CSV, JSON, text)
+- **Smart visualizations** with histograms, bar charts, and correlation heatmaps
+- **Interactive data explorer** with filtering, sorting, and pagination
+- **Comprehensive statistics** with data profiling and quality metrics
+- **Entity extraction** from unstructured text (emails, phones, dates, currency)
+- **Export functionality** (CSV, JSON, text summaries)
+
+**Key Technologies**: Streamlit, Plotly, Pandas, NumPy, regex pattern matching
+
+**Notable Features**: Zero-configuration data analysis with automatic chart generation, intelligent column type detection, and built-in sample datasets for demonstration.
 
 ### 🤖 Chatbot CUJ App
 **Location**: `chatbotcuj_app/`
